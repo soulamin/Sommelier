@@ -1,0 +1,102 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model primeirapagina {
+  id     Int     @id @default(autoincrement())
+  logo   String?
+  texto1 String?
+  texto2 String?
+  banner String?
+}
+
+model local {
+  id      Int       @id @default(autoincrement())
+  name    String?
+  slug    String    @unique(map: "Local_slug_key")
+  produto produto[] @relation("localtoproduto")
+}
+
+model log {
+  id              Int      @id @default(autoincrement())
+  tipo            String?
+  vinho_escolhido String
+  perguntas       String?  @db.LongText
+  send_wordpress  Boolean
+  created_at      DateTime @default(now())
+  unidade         String?
+}
+
+model opcao {
+  id         Int      @id @default(autoincrement())
+  titulo     String?
+  tipo       String?
+  image      String?
+  perguntaId Int
+  slug       String?
+  pergunta   pergunta @relation(fields: [perguntaId], references: [id], map: "Opcao_perguntaId_fkey")
+
+  @@index([perguntaId], map: "Opcao_perguntaId_fkey")
+}
+
+model pergunta {
+  id             Int     @id @default(autoincrement())
+  titulo         String
+  imageFooter    String?
+  perguntaFooter String?
+  order          Int
+  rotaId         Int
+  rota           rota    @relation(fields: [rotaId], references: [id], map: "Pergunta_rotaId_fkey")
+  opcao          opcao[]
+
+  @@index([rotaId], map: "Pergunta_rotaId_fkey")
+}
+
+model produto {
+  id                      Int     @id @default(autoincrement())
+  titulo                  String?
+  descricao               String?
+  preco                   Float?
+  preco_promocional       Float?
+  corredor                String?
+  setor                   String?
+  temperatura             String?
+  caracteristicas_visuais String?
+  teor_alcoolico          String?
+  volume                  String?
+  imagem                  String?
+  tipo                    String?
+  pais                    String?
+  tags                    String?
+  local                   local[] @relation("localtoproduto")
+}
+
+model produtoconfig {
+  id                     Int @id @default(autoincrement())
+  quantidade_de_produtos Int @default(10)
+}
+
+model rota {
+  id       Int        @id @default(autoincrement())
+  order    Int
+  nome     String
+  pergunta pergunta[]
+}
+
+model segundapagina {
+  id        Int     @id @default(autoincrement())
+  titulo    String?
+  pergunta1 String?
+  pergunta2 String?
+  banner    String?
+}
+
+model updated {
+  id   Int      @id @default(autoincrement())
+  date DateTime
+}

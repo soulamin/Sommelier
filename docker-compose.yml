@@ -1,0 +1,21 @@
+version: '3'
+
+volumes:
+    mysql-gpa-api-data:
+        driver: local
+
+services:
+
+
+    mysql:
+        container_name: mysql-gpa-api
+        image: mysql:5.7
+        volumes:
+            - mysql-gpa-api-data:/var/lib/mysql
+        ports:
+            - 3306:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=sommelier
+            - MYSQL_USER=sandbox
+            - MYSQL_PASSWORD=sandbox 

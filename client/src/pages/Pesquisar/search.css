@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* FORM */
+
+.search {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+.form {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.form input[type="text"] {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 0;
+}
+.form input[type="submit"] {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /* background-image: url(../../images/icon-busca.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
