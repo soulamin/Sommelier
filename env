@@ -1,0 +1,4 @@
+DATABASE_URL="mysql://root:@localhost:3306/sommelier"
+BASE_URL_API="https://retailtheled.beeid.com.br/"
+BASE_URL_APP="http://localhost:3000/"
+NODE_ENV="production"

@@ -67,9 +67,9 @@ function Rotas() {
                     //   __html: perguntas.nome,
                     // }}
                   >
-                    Para qual ocasião
+                     Qual seu 
                     <strong class="text-secondary">
-                      você está buscando...
+                     desafio principal ?
                     </strong>
                   </h1>
                 </div>

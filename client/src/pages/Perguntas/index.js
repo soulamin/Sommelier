@@ -210,7 +210,7 @@ function Perguntas() {
                 {/* Chamar Layout Options */}
 
                 {perguntas[perguntaVisivel].opcao.length >= 1 &&
-                  perguntas[perguntaVisivel].opcao.length <= 5 &&
+                  perguntas[perguntaVisivel].opcao.length <= 6 &&
                   perguntas[perguntaVisivel].opcao[0].tipo === "Padrão" &&
                   layoutOptions()}
 
@@ -219,7 +219,7 @@ function Perguntas() {
                   layoutOptionsTwoColumn()}
 
                 {perguntas[perguntaVisivel].opcao.length >= 1 &&
-                  perguntas[perguntaVisivel].opcao.length <= 5 &&
+                  perguntas[perguntaVisivel].opcao.length <= 6 &&
                   perguntas[perguntaVisivel].opcao[0].tipo ===
                     "Acompanhamentos" &&
                   layoutOptions()}
@@ -230,7 +230,7 @@ function Perguntas() {
                   layoutOptionsTwoColumn()}
 
                 {perguntas[perguntaVisivel].opcao.length >= 1 &&
-                  perguntas[perguntaVisivel].opcao.length <= 5 &&
+                  perguntas[perguntaVisivel].opcao.length <= 6 &&
                   perguntas[perguntaVisivel].opcao[0].tipo === "Preço" &&
                   layoutOptions()}
 
