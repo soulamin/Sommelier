@@ -73,17 +73,17 @@ function Wine({ product }) {
           <img src={product.imagem} alt="Vinho" />
         </figure>
         <div class="content">
-          <div class="mb1">
+          {/* <div class="mb1">
             <p class="text text-size-extrasmall text-secondary">
               País de Origem
             </p>
             <p class="text text-size-default text-support">{product.pais}</p>
-          </div>
+          </div> */}
           <div class="mb1">
-            <p class="text text-size-extrasmall text-secondary">Tipo</p>
+            <p class="text text-size-extrasmall text-secondary">Nome</p>
             <p class="text text-size-default text-support">{product.tipo}</p>
           </div>
-          {product.preco_promocional == null ? (
+         {/*  {product.preco_promocional == null ? (
             <div class="mb2">
               <p class="price title h1 text-secondary">
                 R$ {formatReal(product.preco)}
@@ -98,7 +98,7 @@ function Wine({ product }) {
                 R$ {formatReal(product.preco_promocional)}
               </p>
             </div>
-          )}
+          )} */}
 
           <div class="action">
             <Link
@@ -132,7 +132,7 @@ function Wine({ product }) {
             </div>
             <div>
               <p class="text text-size-extrasmall text-secondary">
-                Temperatura
+                Pixels
               </p>
               <p class="text text-size-default text-support">
                 {product.temperatura}
@@ -145,7 +145,7 @@ function Wine({ product }) {
             </div>
             <div>
               <p class="text text-size-extrasmall text-secondary">
-                Características Visuais
+               Brilho
               </p>
               <p class="text text-size-default text-support">
                 {product.caracteristicas_visuais}
@@ -157,28 +157,18 @@ function Wine({ product }) {
               <img src={IconTipo} alt="Tipo" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">Tipo</p>
+              <p class="text text-size-extrasmall text-secondary">Linha</p>
               <p class="text text-size-default text-support">{product.tipo}</p>
             </div>
           </div>
-          <div class="item">
-            <div class="image">
-              <img src={IconPais} alt="País de Origem" />
-            </div>
-            <div>
-              <p class="text text-size-extrasmall text-secondary">
-                País de Origem
-              </p>
-              <p class="text text-size-default text-support">{product.pais}</p>
-            </div>
-          </div>
+          
           <div class="item">
             <div class="image">
               <img src={IconTeor} alt="Teor Alcoólico" />
             </div>
             <div>
               <p class="text text-size-extrasmall text-secondary">
-                Teor Alcoólico
+               Tipo de Manutenção
               </p>
               <p class="text text-size-default text-support">
                 {product.teor_alcoolico}
@@ -190,7 +180,7 @@ function Wine({ product }) {
               <img src={IconVolume} alt="Volume" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">Volume</p>
+              <p class="text text-size-extrasmall text-secondary">Peso do Gabinete</p>
               <p class="text text-size-default text-support">
                 {product.volume}
               </p>

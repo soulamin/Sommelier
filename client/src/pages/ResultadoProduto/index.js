@@ -306,8 +306,8 @@ function ResultadoProduto() {
                   <div class="title mb4">
                     <h1 class="title h1 text-support mb3">
                       {responseMessage}
-                      <strong class="text-secondary">Encontramos</strong>
-                      <strong class="text-secondary">para você</strong>
+                    {/*   <strong class="text-secondary">Encontramos</strong>
+                      <strong class="text-secondary">para você</strong> */}
                     </h1>
                   </div>
                 )}

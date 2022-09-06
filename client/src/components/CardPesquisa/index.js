@@ -107,10 +107,10 @@ function CardPesquisa({ produtos }) {
                 <img src={product.imagem} alt={product.titulo} />
               </figure>
               <div className="content">
-                <h2 className="title text text-support text-size-default mb2">
+                <h2 className="title text text-support text-size-default mb1">
                   {product.titulo}
                 </h2>
-                {product.preco_promocional == null ? (
+               {/*  {product.preco_promocional == null ? (
                   <div className="price mb2">
                     <span className="new title h2 text-secondary">
                       <strong>R$ {formatReal(product.preco)}</strong>
@@ -127,7 +127,7 @@ function CardPesquisa({ produtos }) {
                       </strong>
                     </span>
                   </div>
-                )}
+                )} */}
                 <div className="action">
                   <Link
                     to={`/produto/${product.id}`}

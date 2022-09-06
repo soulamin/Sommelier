@@ -67,10 +67,10 @@ function Card({ produtos }) {
               <img src={product.imagem} alt={product.titulo} />
             </figure>
             <div className="content">
-              <h2 className="title text text-support text-size-default mb2">
+              <h2 className="title text text-support text-size-default mb1">
                 {product.titulo}
               </h2>
-              {product.preco_promocional == null ? (
+             {/*  {product.preco_promocional == null ? (
                 <div className="price mb2">
                   <span className="old text text-support text-size-default text-feature"></span>
                   <span className="new title h2 text-secondary">
@@ -86,7 +86,7 @@ function Card({ produtos }) {
                     <strong>R$ {formatReal(product.preco_promocional)}</strong>
                   </span>
                 </div>
-              )}
+              )} */}
 
               <div className="action">
                 <Link

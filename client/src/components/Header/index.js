@@ -16,7 +16,7 @@ function Header({
     return (
       <header className="header mb5">
         <div className="logo">
-          <img src={logo} alt="Pão de Açúcar Adega" />
+          <img src={logo} alt="The Led" />
         </div>
       </header>
     );
@@ -69,7 +69,7 @@ function Header({
           <div className="title">
             <img
               src={logo}
-              alt="Pão de Açúcar Adega"
+              alt="The Led"
               onClick={() => {
                 navigate("/");
               }}

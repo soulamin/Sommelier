@@ -16,7 +16,7 @@ function Footer({
     return (
       <footer className="footer pdall50">
         <p className="text text-size-small text-support">
-          paodeacucar.com/<strong className="text-secondary">adega</strong>
+        THELED.COM.BR
         </p>
       </footer>
     );
@@ -88,7 +88,7 @@ function Footer({
           </ul>
           <div className="copy">
             <p className="text text-size-small text-support">
-              paodeacucar.com/<strong className="text-secondary">adega</strong>
+            THELED.COM.BR
             </p>
           </div>
         </div>
