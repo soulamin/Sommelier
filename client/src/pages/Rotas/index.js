@@ -57,7 +57,7 @@ function Rotas() {
       {!isLoading ? (
         <>
           <main>
-            <Header logo={Logo} init={false} isGoHome={true} link={"/"} />
+           {/*  <Header logo={Logo} init={false} isGoHome={true} link={"/"} /> */}
             <div className="container">
               <section className="content mb5 mt10-pergunta">
                 <div className="title mb4">

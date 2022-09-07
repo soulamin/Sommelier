@@ -14,7 +14,7 @@ function Header({
   const navigate = useNavigate();
   const layoutInit = () => {
     return (
-      <header className="header mb5">
+      <header className="header mb5 mt3">
         <div className="logo">
           <img src={logo} alt="The Led" />
         </div>

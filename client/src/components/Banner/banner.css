@@ -12,6 +12,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-left: 8%;
+  padding-right: 11%;
 }
 .banner img {
   width: 100%;

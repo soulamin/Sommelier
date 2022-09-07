@@ -16,6 +16,7 @@ function Home() {
   const [titulo, setTitulo] = useState(null);
   const [pergunta1, setPergunta1] = useState(null);
   const [pergunta2, setPergunta2] = useState(null);
+  const [logo, setLogo] = useState(null);
 
   useEffect(() => {
     load();
@@ -42,7 +43,9 @@ function Home() {
     return (
       <>
         <main>
-          <Header logo={Logo} init={false} isGoHome={true} link={"/"} />
+         
+            <Header logo={logo} />
+          
           <Banner image={banner} mb5={true} styles={{ marginTop: "15vh" }} />
           <div className="container">
             <section
@@ -51,17 +54,16 @@ function Home() {
             >
               <article className="mb3 ajuste">
                 <h1
-                  className="title h2 text-support mb3"
+                  className="title h2 text-support mb3 "
                   dangerouslySetInnerHTML={{ __html: pergunta1 }}
                   style={{ fontSize: "60px" }}
                 />
                 <Link
                   to={"/rotas"}
                   title="Me ajude!"
-                  className="button button-background bg-yellow text-primary text-size-default"
+                  className="button button-background bg-purple text-support text-size-default"
                 >
-                  <img src={IconMenu} alt="Me ajude!" className="icon-button" />
-                  Me ajude!
+                 ME AJUDE!
                 </Link>
               </article>
 
@@ -76,14 +78,9 @@ function Home() {
                 <Link
                   to={"/pesquisa"}
                   title="Pesquisar"
-                  className="button button-background bg-yellow text-primary text-size-default"
+                  className="button button-background bg-purple text-support text text-size-default"
                 >
-                  <img
-                    src={IconBusca}
-                    alt="Pesquisar"
-                    className="icon-button"
-                  />
-                  Pesquisar
+                  PESQUISAR
                 </Link>
               </article>
             </section>

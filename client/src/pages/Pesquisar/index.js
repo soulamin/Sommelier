@@ -180,11 +180,11 @@ const Pesquisar = () => {
       {!isLoading ? (
         <>
           <main>
-            <Header logo={Logo} init={false} isGoHome={true} link={"/"} />
+        
             <div className="container">
-              <section className="content mb5">
-                <section className="search mb4">
-                  <form className="form" onSubmit={handleSubmit}>
+              <section className="content mt5">
+                 <section className="search mb4">
+                  {/* <form className="form" onSubmit={handleSubmit}>
                     <input
                       type="text"
                       placeholder="Olá, qual a boa?"
@@ -231,8 +231,8 @@ const Pesquisar = () => {
                       value=""
                       style={{ backgroundImage: `url(${IconBusca})` }}
                     />
-                  </form>
-                </section>
+                  </form> */}
+                </section> 
                 {categoriasComProduto.length !== 0 && layoutCategoria()}
               </section>
             </div>

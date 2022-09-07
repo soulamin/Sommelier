@@ -74,6 +74,8 @@ function CardPesquisa({ produtos }) {
     }
   };
 
+
+
   return (
     <>
       {console.log(produtos)}
@@ -98,7 +100,7 @@ function CardPesquisa({ produtos }) {
       >
         {produtos.map((product) => {
           return (
-            <div className="card border-purple mb3" key={product.id}>
+            <div className="card border-purple" key={product.id}>
               <figure className="mb2">
                 <div
                   className="flag"
@@ -132,14 +134,14 @@ function CardPesquisa({ produtos }) {
                   <Link
                     to={`/produto/${product.id}`}
                     title="Quero esse!"
-                    className="button button-background button100 bg-yellow text-primary text-size-default"
+                    className="button button-background button100 bg-purple text-support text-size-default"
                   >
                     <img
                       src={IconCart}
                       alt="Quero esse!"
                       className="icon-button"
                     />
-                    Quero esse!
+                    QUERO ESSE!
                   </Link>
                 </div>
               </div>

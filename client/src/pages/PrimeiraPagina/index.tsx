@@ -80,24 +80,24 @@ function PrimeiraPagina() {
             <Header logo={logo} />
           </div>
           <Banner image={banner} mb5={true} />
-          <div className="container">
-            <section className="content" style={{ marginTop: "6vh" }}>
-              <h1 className="title h2 text-support mb3">
-                {texto1} <strong className="text-secondary">{texto2}</strong>
-              </h1>
+          <div className="container ">
+            <section className="content ms2 me2 text" style={{ marginTop: "6vh" }}>
+              <h3 className="title h2 text-support mb3 text">
+                {texto1} <strong className="text-support text h4">{texto2}</strong>
+              </h3>
 
               <Link
                 to={"/home"}
                 title="Iniciar"
-                className="button button-background bg-yellow text-primary text-size-default"
+                className="button bg-purple text-support text text-size-default"
               >
-                Iniciar
+                INICIAR
               </Link>
             </section>
           </div>
         </main>
-        <Footer />
-      </>
+{/*         <Footer />
+ */}      </>
     );
   };
 
