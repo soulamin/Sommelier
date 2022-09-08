@@ -45,7 +45,7 @@ function Sucesso() {
         <>
           <main>
            {/*  <Header logo={Logo} init={false} isGoHome={true} link={"/"} /> */}
-            <div className="container mt4">
+            <div className="container mt5">
               <section className="content mt5 mb5">
                 <div className="success">
                   <h1 className="title h1 text-support">
