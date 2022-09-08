@@ -17,6 +17,7 @@ import FlagLebanon from "../../assets/images/flag-lebanon.svg";
 import FlagNewZealand from "../../assets/images/flag-new-zealand.svg";
 import FlagPortugal from "../../assets/images/flag-portugal.svg";
 import FlagUruguay from "../../assets/images/flag-uruguay.svg";
+import circle from "../../assets/images/circle.svg";
 
 import IconCart from "../../assets/images/icon-cart.svg";
 
@@ -92,7 +93,7 @@ function Card({ produtos }) {
                 <Link
                   to={`/produto/${product.id}`}
                   title="Quero esse!"
-                  className="button button-background button100 bg-yellow text-primary text-size-default"
+                  className="button button-background button100 bg-purple text-support text-size-default"
                 >
                   <img
                     src={IconCart}

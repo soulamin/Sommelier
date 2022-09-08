@@ -182,7 +182,7 @@ function ResultadoProduto() {
   const layoutEmpt = () => {
     return getQueryVariable("s") ? (
       <div class="title">
-        <h1 class="title h2 text-secondary mb2">
+        <h1 class="title h2 text-primary mb2">
           <strong>Ops!</strong>
         </h1>
         <h2 class="title h3 text-support mb2">
@@ -216,9 +216,9 @@ function ResultadoProduto() {
           </h2>
         </div>
         <Link
-          to={"/sugestoes"}
+          to={"/pesquisa"}
           title="Visualizar sugestões"
-          className="button button-background bg-yellow text-primary text-size-default"
+          className="button button-background bg-purple text-support text-size-default"
         >
           Visualizar sugestões
         </Link>
@@ -237,8 +237,8 @@ function ResultadoProduto() {
       {!isLoading ? (
         <>
           <main>
-            <Header logo={Logo} init={false} link={"/"} isGoHome={true} />
-            <div class="container">
+{/*             <Header logo={Logo} init={false} link={"/"} isGoHome={true} />
+ */}            <div class="container mt-3">
               <section class="content mb5">
                 {getQueryVariable("s") && (
                   <section className="search mb4">
@@ -303,8 +303,8 @@ function ResultadoProduto() {
                 )}
 
                 {produtos.length !== 0 && (
-                  <div class="title mb4">
-                    <h1 class="title h1 text-support mb3">
+                  <div class="title mb2 mt5 ">
+                    <h1 class="title h1 text-support mb1 mt4">
                       {responseMessage}
                     {/*   <strong class="text-secondary">Encontramos</strong>
                       <strong class="text-secondary">para você</strong> */}

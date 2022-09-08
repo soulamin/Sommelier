@@ -24,6 +24,7 @@ import FlagLebanon from "../../assets/images/flag-lebanon.svg";
 import FlagNewZealand from "../../assets/images/flag-new-zealand.svg";
 import FlagPortugal from "../../assets/images/flag-portugal.svg";
 import FlagUruguay from "../../assets/images/flag-uruguay.svg";
+import IconCircle from "../../assets/images/circle.svg";
 
 function Wine({ product }) {
     const getFlag = (pais) => {
@@ -107,7 +108,7 @@ function Wine({ product }) {
                 product: product,
               }}
               title="Quero esse!"
-              class="button button-background button100 bg-yellow text-primary text-size-default"
+              class="button button-background button100 bg-purple text-support text-size-default"
             >
               <img src={IconCart} alt="Quero esse!" class="icon-button" />
               Quero esse!
@@ -118,7 +119,7 @@ function Wine({ product }) {
 
       <div class="more-info border-purple">
         <div class="description">
-          <h3 class="title h2 text-secondary mb3">
+          <h3 class="title h2 text-primary mb3">
             <strong>Descrição</strong>
           </h3>
           <p class="text text-support text-size-default mb2">
@@ -128,10 +129,10 @@ function Wine({ product }) {
         <div class="infos">
           <div class="item">
             <div class="image">
-              <img src={IconTemperatura} alt="Temperatura" />
+              <img src={IconCircle} alt="Temperatura" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">
+              <p class="text text-size-extrasmall text-primary">
                 Pixels
               </p>
               <p class="text text-size-default text-support">
@@ -141,10 +142,10 @@ function Wine({ product }) {
           </div>
           <div class="item">
             <div class="image">
-              <img src={IconCaracteristicas} alt="Características Visuais" />
+              <img src={IconCircle} alt="Características Visuais" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">
+              <p class="text text-size-extrasmall text-primary">
                Brilho
               </p>
               <p class="text text-size-default text-support">
@@ -154,20 +155,20 @@ function Wine({ product }) {
           </div>
           <div class="item">
             <div class="image">
-              <img src={IconTipo} alt="Tipo" />
+              <img src={IconCircle} alt="Tipo" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">Linha</p>
+              <p class="text text-size-extrasmall text-primary">Linha</p>
               <p class="text text-size-default text-support">{product.tipo}</p>
             </div>
           </div>
           
           <div class="item">
             <div class="image">
-              <img src={IconTeor} alt="Teor Alcoólico" />
+              <img src={IconCircle} alt="Teor Alcoólico" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">
+              <p class="text text-size-extrasmall text-primary">
                Tipo de Manutenção
               </p>
               <p class="text text-size-default text-support">
@@ -177,10 +178,10 @@ function Wine({ product }) {
           </div>
           <div class="item">
             <div class="image">
-              <img src={IconVolume} alt="Volume" />
+              <img src={IconCircle} alt="Volume" />
             </div>
             <div>
-              <p class="text text-size-extrasmall text-secondary">Peso do Gabinete</p>
+              <p class="text text-size-extrasmall text-primary">Peso do Gabinete</p>
               <p class="text text-size-default text-support">
                 {product.volume}
               </p>

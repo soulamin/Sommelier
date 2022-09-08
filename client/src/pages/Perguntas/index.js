@@ -182,7 +182,7 @@ function Perguntas() {
                 }
               }}
             >
-              {perguntas[perguntaVisivel].perguntaFooter}
+            <strong>   {perguntas[perguntaVisivel].perguntaFooter} </strong>
             </Link>
           </div>
         </div>

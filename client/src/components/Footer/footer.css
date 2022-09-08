@@ -7,11 +7,6 @@
 .footer.fixed {
   position: fixed;
   bottom: 0;
-  background: linear-gradient(
-    0.54deg,
-    #391a46 6.3%,
-    rgba(57, 26, 70, 0.54) 191.02%
-  );
   padding: 25px 0;
 }
 .footer {

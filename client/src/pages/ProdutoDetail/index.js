@@ -31,8 +31,8 @@ function ProdutoDetail() {
         <>
           <main>
          {/*    <Header logo={Logo} init={false} isGoHome={true} link={"/"} /> */}
-            <div class="container">
-              <section class="content mb5">
+            <div class="container mt5">
+              <section class="content mb5 mt5 pt5">
                 {produto && <Wine product={produto} />}
               </section>
             </div>

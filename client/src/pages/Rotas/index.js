@@ -43,7 +43,7 @@ function Rotas() {
                 }}
                 title={element.slug}
               >
-                {element.nome}
+              <strong> {element.nome} </strong>  
               </Link>
             </div>
           );
@@ -68,7 +68,7 @@ function Rotas() {
                     // }}
                   >
                      Qual seu 
-                    <strong class="text-secondary">
+                    <strong className="text-primary">
                      desafio principal ?
                     </strong>
                   </h1>

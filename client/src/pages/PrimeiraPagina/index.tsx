@@ -37,7 +37,7 @@ function PrimeiraPagina() {
             <div className="title mb4">
               <h1 className="title h1 text-support mb3">
                 Selecione a
-                <strong className="text-secondary">unidade desejada</strong>
+                <strong>unidade desejada</strong>
               </h1>
             </div>
 
@@ -178,7 +178,7 @@ function PrimeiraPagina() {
         >
           <img src={Loader} style={{ width: 130 }} />
           <h1 className="title h2 text-support mb3">
-            <strong className="text-secondary" style={{ fontSize: 62 }}>
+            <strong className="text-support" style={{ fontSize: 62 }}>
               Sincronizando
             </strong>
           </h1>

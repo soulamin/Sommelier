@@ -44,34 +44,34 @@ function Sucesso() {
       {!isLoading ? (
         <>
           <main>
-            <Header logo={Logo} init={false} isGoHome={true} link={"/"} />
+           {/*  <Header logo={Logo} init={false} isGoHome={true} link={"/"} /> */}
             <div className="container">
               <section className="content mb5">
                 <div className="success">
                   <h1 className="title h1 text-support">
                     Obrigado pela{" "}
-                    <strong className="text-secondary">preferência...</strong>
+                    <strong className="text-primary">preferência...</strong>
                   </h1>
                   <div className="div-success"></div>
                   <div>
                     <h2 className="title h2 text-support mb3">
-                      O vinho escolhido...
+                      O Produto escolhido...
                     </h2>
                     <div className="choose-wine">
                       <figure>
                         <img src={product.imagem} alt="Vinho" />
                       </figure>
-                      <h3 className="title h2 text-secondary">
+                      <h3 className="title h2 text-primary">
                         <strong>{product.titulo}</strong>
                       </h3>
                     </div>
                   </div>
                   <div className="div-success"></div>
                                     
-                  {(product.tipo === "Vinhos Tintos") && 
+                 {/*  {(product.tipo === "Vinhos Tintos") && 
                   (<h3 className="title h3 text-support mb5">
                     O vinho se encontra no corredor respectivo de sua nacionalidade: <br></br> <strong class="text-secondary">{product.pais}</strong>                    
-                  </h3>)}
+                  </h3>)} */}
                   
                   {/* <h2 className="title h1 text-support mb5">
                     Se encontra no corredor{" "}
@@ -86,7 +86,7 @@ function Sucesso() {
                     <Link
                       to={"/"}
                       title="Finalizar"
-                      className="button button-background bg-yellow text-primary text-size-default"
+                      className="button button-background bg-purple text-support text-size-default"
                     >
                       Finalizar
                     </Link>
