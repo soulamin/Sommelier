@@ -57,7 +57,7 @@ function PrimeiraPagina() {
                           setUnidadeSelected(unidade.slug);
                         }}
                         title={unidade.name}
-                        className="button button-border button100 border-white text-support text-size-default"
+                        className="button button-border text button100 border-white text-support text-size-default"
                       >
                         {unidade.name}
                       </Link>

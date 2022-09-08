@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "gelion" ;
+  src: url("../fonts/gelion-regular.woff") format("woff") ;
+}
 /* CSS Document */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "gelion" !important;
 }
 
 ul,
@@ -34,6 +39,7 @@ h2,
 h3,
 h4 {
   font-weight: normal;
+  font-family: "gelion" !important;
 }
 
 img {
@@ -49,26 +55,16 @@ img {
 
 body {
   overflow-x: hidden;
+  font-family: "gelion" !important;
 }
 
 html,
 body,
 #root {
   height: 100%;
+  font-family: "gelion" !important;
 }
 
-/* --- FONTS --- */
-
-@font-face {
-  font-family: "Gelion Regular";
-  src: url("../fonts/Gelion-Regular.ttf") format("truetype"),
-    url("../fonts/Gelion-Regular.woff") format("woff"), ;
-}
-
-
-/* --- END FONTS --- */
-
-/* --- COLORS --- */
 
 /* TEXT */
 
@@ -98,7 +94,7 @@ body,
 
   background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
   margin: 10px;
-  padding: 15px 45px;
+  padding: 20px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -129,7 +125,7 @@ body,
 /* --- TEXTS --- */
 
 .text {
-  font-family: "Gelion Regular";
+  font-family: "gelion" !important;
   line-height: 1.4em;
 }
 
@@ -152,19 +148,19 @@ body,
 /* --- TITLES --- */
 
 .title {
-  font-family: "Gelion Regular";
+  font-family: "gelion" !important;
   font-weight: normal;
   line-height: 1em;
 }
 
 .title strong {
-  font-family: "Gelion Regular";
+  font-family: "gelion" !important;
   display: block;
 }
 
 .title.h2 strong,
 .title.h3 strong {
-  font-family: "Gelion Regular";
+  font-family: "gelion" !important;
 }
 
 /* SIZE TITLES */
@@ -198,7 +194,7 @@ body,
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-family: "Gelion Regular";
+  font-family: "gelion" !important;
   font-weight: normal;
   border-radius: 8px;
   padding: 39px 35px 40px;

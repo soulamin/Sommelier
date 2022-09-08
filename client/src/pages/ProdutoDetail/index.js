@@ -30,7 +30,7 @@ function ProdutoDetail() {
       {!isLoading ? (
         <>
           <main>
-            <Header logo={Logo} init={false} isGoHome={true} link={"/"} />
+         {/*    <Header logo={Logo} init={false} isGoHome={true} link={"/"} /> */}
             <div class="container">
               <section class="content mb5">
                 {produto && <Wine product={produto} />}
