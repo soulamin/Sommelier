@@ -85,12 +85,12 @@ switch ($acao) {
         $totald = $stmtd->fetch();
 
 
-        $resultado['totalr'] = round(($totalr['totalr']/$total['total']) * 100,1);
-        $resultado['totalt'] = round(($totalt['totalt']/$total['total']) * 100,1);
-        $resultado['totalm'] = round(($totalm['totalm']/$total['total']) * 100,1);
-        $resultado['totali'] = round(($totali['totali']/$total['total']) * 100,1);
-        $resultado['totalp'] = round(($totalp['totalp']/$total['total']) * 100,1);
-        $resultado['totald'] = round(($totald['totald']/$total['total']) * 100,1);
+        $resultado['totalr'] = $totalr['totalr']==0 ? 0.0: round(($totalr['totalr']/$total['total']) * 100,1);
+        $resultado['totalt'] = $totalt['totalt']==0 ? 0.0:round(($totalt['totalt']/$total['total']) * 100,1);
+        $resultado['totalm'] = $totalm['totalm']==0 ? 0.0:round(($totalm['totalm']/$total['total']) * 100,1);
+        $resultado['totali'] = $totali['totali']==0 ? 0.0:round(($totali['totali']/$total['total']) * 100,1);
+        $resultado['totalp'] = $totalp['totalp']==0 ? 0.0:round(($totalp['totalp']/$total['total']) * 100,1);
+        $resultado['totald'] = $totald['totald']==0 ? 0.0:round(($totald['totald']/$total['total']) * 100,1);
 
 
         echo json_encode($resultado);
