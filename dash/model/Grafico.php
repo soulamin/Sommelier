@@ -50,7 +50,6 @@ switch ($acao) {
         $destacar = 'Destacar o PDV - Efeito WoW';
 
         $st = $pdo->prepare('SELECT count(id) as total FROM dash_pergunta');
-        $st->bindParam(':pergunta', $residencial);
         $st->execute();
         $total = $st->fetch();
 
