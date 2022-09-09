@@ -81,7 +81,7 @@ function Wine({ product }) {
             <p class="text text-size-default text-support">{product.pais}</p>
           </div> */}
           <div class="mb1">
-            <p class="text text-size-extrasmall text-secondary">Nome</p>
+            <p class="text text-size-extrasmall text-primary">Nome</p>
             <p class="text text-size-default text-support">{product.tipo}</p>
           </div>
          {/*  {product.preco_promocional == null ? (
