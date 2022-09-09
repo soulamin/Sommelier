@@ -22,6 +22,14 @@ function Home() {
     load();
   }, []);
 
+  function Log(dados) {
+    const apiacesso = axios.get(
+      `http://localhost:3000/dash/api/acesso_api/?a=${dados}`
+    );
+  }
+
+
+
   async function load() {
     try {
       const requestSecondPage = await axios.get(
@@ -76,6 +84,7 @@ function Home() {
                   to={"/rotas"}
                   title="Me ajude!"
                   className="button button-background bg-purple text-support text-size-default"
+                  onClick={() => Log('quiz')}
                 >
                   ME AJUDE!
                 </Link>
@@ -93,6 +102,7 @@ function Home() {
                   to={"/pesquisa"}
                   title="Pesquisar"
                   className="button button-background bg-purple text-support text text-size-default"
+                  onClick={() => Log('Lista')}
                 >
                   PESQUISAR
                 </Link>

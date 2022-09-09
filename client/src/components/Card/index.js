@@ -1,6 +1,7 @@
 /* eslint-disable default-case */
 import React from "react";
 import "./card.css";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import { formatReal } from "../../helper";
 import FlagSouthAfrica from "../../assets/images/flag-south-africa.svg";
@@ -54,6 +55,11 @@ function Card({ produtos }) {
         return FlagFrance;
     }
   };
+  function Log(dados) {
+    const apiacesso = axios.get(
+      `http://localhost:3000/dash/api/produto_api/?p=${dados}`
+    );
+  }
 
   return (
     <section className="cards">
@@ -94,6 +100,7 @@ function Card({ produtos }) {
                   to={`/produto/${product.id}`}
                   title="Quero esse!"
                   className="button button-background button100 bg-purple text-support text-size-default"
+                  onClick={() => Log(product.titulo)} 
                 >
                   <img
                     src={IconCart}

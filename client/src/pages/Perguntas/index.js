@@ -38,6 +38,7 @@ function Perguntas() {
     }
   }, [perguntasSelecionadas, isNextPage]);
 
+ 
   async function load() {
     let { perguntas } = location.state;
     console.log("location.state", location.state);

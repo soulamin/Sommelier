@@ -16,6 +16,12 @@ function Rotas() {
     load();
   }, []);
 
+  function Log(dados) {
+    const apiacesso = axios.get(
+      `http://localhost:3000/dash/api/pergunta_api/?t=${dados}`
+    );
+  }
+
   async function load() {
     const requestPerguntas = await axios.get(
       "http://localhost:5000/api/v1/questions-page"
@@ -33,13 +39,13 @@ function Rotas() {
               <Link
                 to={"#!"}
                 className="button button-border button100 border-white text-support text-size-default"
-                onClick={async (event) => {
+                onClick={ async (event) => {
                   event.preventDefault();
                   navigate("/perguntas", {
                     state: {
                       perguntas: element.pergunta,
                     },
-                  });
+                  });Log(element.nome);
                 }}
                 title={element.slug}
               >
