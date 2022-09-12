@@ -111,15 +111,21 @@ router.get("/sync", async (req, res) => {
           ]);
 
           requestPerguntas.data.forEach(async (item) => {
-            await prisma.rota.create({
-              data: {
-                order: item.order,
-                nome: item.nome_rota,
-                pergunta: {
-                  create: opcoesTemplate(item),
+            console.log(item.nome_rota);
+            if(item.nome_rota !== null)
+            {
+              await prisma.rota.create(
+                {                            
+                data: {                
+                  order: item.order,
+                  nome: item.nome_rota,
+                  pergunta: {
+                    create: opcoesTemplate(item),
+                  },
                 },
-              },
-            });
+              });
+            }
+
           });
 
           // Local
