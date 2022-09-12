@@ -233,7 +233,11 @@ body,
   color: #fff;
 }
 
-
+.text-center{
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 
 .button.bg-yellow:hover {
   color: #381945;

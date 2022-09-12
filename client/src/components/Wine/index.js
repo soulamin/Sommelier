@@ -27,7 +27,7 @@ import FlagUruguay from "../../assets/images/flag-uruguay.svg";
 import IconCircle from "../../assets/images/circle.svg";
 
 function Wine({ product }) {
-    const getFlag = (pais) => {
+  const getFlag = (pais) => {
     switch (pais) {
       case "Uruguai":
         return FlagUruguay;
@@ -59,6 +59,7 @@ function Wine({ product }) {
         return FlagFrance;
     }
   };
+  var GoogleChartAPI = 'https://chart.googleapis.com/chart?cht=qr&chs=300x300&chld=H&chl=';
 
   return (
     <section className="wine">
@@ -67,10 +68,10 @@ function Wine({ product }) {
       </h1>
       <header class="info border-purple mb3">
         <figure>
-          <div
+          {/* <div
             class="flag"
             style={{ backgroundImage: `url(${getFlag(product.pais)})` }}
-          ></div>
+          ></div> */}
           <img src={product.imagem} alt="Vinho" />
         </figure>
         <div class="content">
@@ -84,7 +85,7 @@ function Wine({ product }) {
             <p class="text text-size-extrasmall text-primary">Nome</p>
             <p class="text text-size-default text-support">{product.tipo}</p>
           </div>
-         {/*  {product.preco_promocional == null ? (
+          {/*  {product.preco_promocional == null ? (
             <div class="mb2">
               <p class="price title h1 text-secondary">
                 R$ {formatReal(product.preco)}
@@ -140,13 +141,14 @@ function Wine({ product }) {
               </p>
             </div>
           </div>
+
           <div class="item">
             <div class="image">
               <img src={IconCircle} alt="Características Visuais" />
             </div>
             <div>
               <p class="text text-size-extrasmall text-primary">
-               Brilho
+                Brilho
               </p>
               <p class="text text-size-default text-support">
                 {product.caracteristicas_visuais}
@@ -162,14 +164,14 @@ function Wine({ product }) {
               <p class="text text-size-default text-support">{product.tipo}</p>
             </div>
           </div>
-          
+
           <div class="item">
             <div class="image">
               <img src={IconCircle} alt="Teor Alcoólico" />
             </div>
             <div>
               <p class="text text-size-extrasmall text-primary">
-               Tipo de Manutenção
+                Tipo de Manutenção
               </p>
               <p class="text text-size-default text-support">
                 {product.teor_alcoolico}
@@ -189,7 +191,18 @@ function Wine({ product }) {
           </div>
         </div>
       </div>
-    </section>
+      <div class="more-info border-purple text-center">
+        <div class="answers grid oneColuna text-center" >
+            <p class="text text-size-default text-support mt-1 mb2 text-center">
+              Escaneie pelo seu celular
+            </p>
+            <div class="image text-center">
+              <img src={GoogleChartAPI + product.setor} alt="QRcode" />
+            </div>
+        </div>
+      </div>
+
+    </section >
   );
 }
 
