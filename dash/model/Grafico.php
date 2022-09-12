@@ -14,7 +14,7 @@ switch ($acao) {
 
     case 'grafico_acesso':
         $quiz  = 'q';
-        $lista = 'l';
+        $produto = 'p';
 
         $stmt = $pdo->prepare('SELECT count(id) as totalacesso FROM dash_acesso');
         $stmt->execute();
@@ -25,16 +25,16 @@ switch ($acao) {
         $stmtquiz->execute();
         $totalquiz = $stmtquiz->fetch();
 
-        $stmtlista = $pdo->prepare('SELECT count(id) as totallista FROM dash_acesso WHERE ativacao =:ativacao');
-        $stmtlista->bindParam(':ativacao', $lista);
-        $stmtlista->execute();
-        $totallista = $stmtlista->fetch();
+        $stmtprod = $pdo->prepare('SELECT count(id) as totalproduto FROM dash_acesso WHERE ativacao =:ativacao');
+        $stmtprod->bindParam(':ativacao', $produto);
+        $stmtprod->execute();
+        $totalprod = $stmtprod->fetch();
 
 
 
         $resultado['totalacesso'] = $totalacesso['totalacesso'];
         $resultado['totalquiz'] = round(($totalquiz['totalquiz'] / $totalacesso['totalacesso']) * 100, 2);
-        $resultado['totallista'] = round(($totallista['totallista'] / $totalacesso['totalacesso']) * 100, 2);
+        $resultado['totalproduto'] = round(($totalprod['totalproduto'] / $totalacesso['totalacesso']) * 100, 2);
 
         echo json_encode($resultado);
 

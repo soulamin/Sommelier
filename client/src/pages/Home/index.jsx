@@ -102,7 +102,7 @@ function Home() {
                   to={"/pesquisa"}
                   title="Pesquisar"
                   className="button button-background bg-purple text-support text text-size-default"
-                  onClick={() => Log('Lista')}
+                  onClick={() => Log('produtos')}
                 >
                   Conheça nossos produtos
                 </Link>

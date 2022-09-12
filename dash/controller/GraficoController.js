@@ -99,7 +99,7 @@ function grafico_acesso() {
 				name: 'Share',
 				data: [
 					{ name: 'Quiz', y: data['totalquiz'] },
-					{ name: 'Lista', y: data['totallista'] },
+					{ name: 'Produtos', y: data['totalproduto'] },
 					
 				]
 			}]
