@@ -194,7 +194,7 @@ function Wine({ product }) {
       <div class="more-info border-purple text-center">
         <div class="answers grid oneColuna text-center" >
             <p class="text text-size-default text-support mt-1 mb2 text-center">
-              Escaneie pelo seu celular
+              Veja o produto aplicado:
             </p>
             <div class="image text-center">
               <img src={GoogleChartAPI + product.setor} alt="QRcode" />
