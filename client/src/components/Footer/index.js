@@ -24,7 +24,7 @@ function Footer({
 
   const layoutInterno = () => {
     return (
-      <footer className={`footer ${fixed ? "fixed" : "padding50"}`}>
+      <footer className={`footer ${fixed ? "fixed" : ""}`}>
         <div className="container" style={{ flexDirection: "column" }}>
           <ul className="menu-footer">
             <li>
