@@ -482,7 +482,7 @@ router.get("/search-product", async (req, res) => {
       } else {
         return res.send({
           result: produtosReturn,
-          message: "Encontramos as melhores opções",
+          message: "Conheça as melhores soluções",
         });
       }
     } else {

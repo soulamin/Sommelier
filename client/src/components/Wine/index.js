@@ -102,7 +102,7 @@ function Wine({ product }) {
             </div>
           )} */}
 
-          <div class="action">
+          {/* <div class="action">
             <Link
               to={"/sucesso"}
               state={{
@@ -114,7 +114,7 @@ function Wine({ product }) {
               <img src={IconCart} alt="Quero esse!" class="icon-button" />
               Quero esse!
             </Link>
-          </div>
+          </div> */}
         </div>
       </header>
 
