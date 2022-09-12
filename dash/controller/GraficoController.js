@@ -167,25 +167,21 @@ Highcharts.chart('containerpergunta', {
             colorByPoint: true,
             data: [
                 
+              
                 {
-                    name: "Trade Marketing",
-                    y: data['totalt'],
-                    drilldown:  "Trade Marketing"
-                },
-                {
-                    name: "Publicidade",
+                    name: "Publicidade no PDV",
                     y: data['totalp'],
-                    drilldown: "Publicidade"
+                    drilldown: "Publicidade no PDV"
                 },
                 {
-                    name: "Informativo",
+                    name: "Atrair Atenção do público",
                     y: data['totali'],
-                    drilldown: "Informativo"
+                    drilldown: "Atrair Atenção do público"
                 },
                 {
-                    name: "Destacar o PDV",
+                    name: "Destacar produtos e ofertas",
                     y: data['totald'],
-                    drilldown: "Destacar o PDV"
+                    drilldown: "Destacar produtos e ofertas"
                 },
                 {
                     name: "Menu Board",

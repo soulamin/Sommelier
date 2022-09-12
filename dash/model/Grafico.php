@@ -43,11 +43,10 @@ switch ($acao) {
     case 'grafico_pergunta':
 
         $residencial = 'Residencial';
-        $trade = 'Trade Marketing';
-        $informativo = 'Informativo';
-        $publicidade = 'Publicidade';
+        $informativo = 'Atrair Atenção do Publico';
+        $publicidade = 'Publicidade no PDV';
         $menu = 'Menu Board';
-        $destacar = 'Destacar o PDV - Efeito WoW';
+        $destacar = 'Destacar produtos e ofertas';
 
         $st = $pdo->prepare('SELECT count(id) as total FROM dash_pergunta');
         $st->execute();
@@ -58,10 +57,6 @@ switch ($acao) {
         $stmtr->execute();
         $totalr = $stmtr->fetch();
 
-        $stmtt = $pdo->prepare('SELECT count(id) as totalt FROM dash_pergunta WHERE tipo = :pergunta');
-        $stmtt->bindParam(':pergunta', $trade);
-        $stmtt->execute();
-        $totalt = $stmtt->fetch();
 
         $stmti = $pdo->prepare('SELECT count(id) as totali FROM dash_pergunta WHERE tipo = :pergunta');
         $stmti->bindParam(':pergunta', $informativo);
@@ -85,7 +80,6 @@ switch ($acao) {
 
 
         $resultado['totalr'] = $totalr['totalr']==0 ? 0.0: round(($totalr['totalr']/$total['total']) * 100,1);
-        $resultado['totalt'] = $totalt['totalt']==0 ? 0.0:round(($totalt['totalt']/$total['total']) * 100,1);
         $resultado['totalm'] = $totalm['totalm']==0 ? 0.0:round(($totalm['totalm']/$total['total']) * 100,1);
         $resultado['totali'] = $totali['totali']==0 ? 0.0:round(($totali['totali']/$total['total']) * 100,1);
         $resultado['totalp'] = $totalp['totalp']==0 ? 0.0:round(($totalp['totalp']/$total['total']) * 100,1);
