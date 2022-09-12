@@ -15,9 +15,9 @@ function Footer({
   const layoutInit = () => {
     return (
       <footer className="footer pdall50">
-        <p className="text text-size-small text-support">
+        {/* <p className="text text-size-small text-support">
         THELED.COM.BR
-        </p>
+        </p> */}
       </footer>
     );
   };
@@ -86,11 +86,11 @@ function Footer({
               )}
             </li>
           </ul>
-          <div className="copy">
+          {/* <div className="copy">
             <p className="text text-size-small text-support">
             THELED.COM.BR
             </p>
-          </div>
+          </div> */}
         </div>
       </footer>
     );

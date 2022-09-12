@@ -121,11 +121,11 @@ function Wine({ product }) {
       <div class="more-info border-purple">
         <div class="description">
           <h3 class="title h2 text-primary mb3">
-            <strong>Descrição</strong>
+            <strong>Características</strong>
           </h3>
-          <p class="text text-support text-size-default mb2">
+          {/* <p class="text text-support text-size-default mb2">
             {product.descricao}
-          </p>
+          </p> */}
         </div>
         <div class="infos">
           <div class="item">
@@ -155,7 +155,7 @@ function Wine({ product }) {
               </p>
             </div>
           </div>
-          <div class="item">
+          {/* <div class="item">
             <div class="image">
               <img src={IconCircle} alt="Tipo" />
             </div>
@@ -163,7 +163,7 @@ function Wine({ product }) {
               <p class="text text-size-extrasmall text-primary">Linha</p>
               <p class="text text-size-default text-support">{product.tipo}</p>
             </div>
-          </div>
+          </div> */}
 
           <div class="item">
             <div class="image">
