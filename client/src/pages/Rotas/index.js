@@ -73,10 +73,10 @@ function Rotas() {
                     //   __html: perguntas.nome,
                     // }}
                   >
-                     Qual seu 
-                    <strong className="text-primary">
-                     desafio principal ?
-                    </strong>
+                     Qual seu desafio  ? 
+                    {/* <strong className="text-primary">
+                     
+                    </strong> */}
                   </h1>
                 </div>
                 {/* Chamar Layout Options */}

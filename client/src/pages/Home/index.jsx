@@ -75,36 +75,36 @@ function Home() {
               style={{ marginTop: "10vh" }}
             >
               <article className="mb2 ajuste">
-                <h1
+                {/* <h1
                   className="title h2 text-support mb3 "
                   dangerouslySetInnerHTML={{ __html: pergunta1 }}
                   style={{ fontSize: "60px" }}
-                />
+                /> */}
                 <Link
                   to={"/rotas"}
                   title="Me ajude!"
                   className="button button-background bg-purple text-support text-size-default"
                   onClick={() => Log('quiz')}
                 >
-                  ME AJUDE!
+                  Consulte a melhor solução
                 </Link>
               </article>
 
               {/* <div className="div"></div> */}
 
               <article className="mb2 ajuste" style={{ paddingLeft: "50px" }}>
-                <h2
+                {/* <h2
                   className="title h2 text-support mb3"
                   dangerouslySetInnerHTML={{ __html: pergunta2 }}
                   style={{ fontSize: "60px" }}
-                />
+                /> */}
                 <Link
                   to={"/pesquisa"}
                   title="Pesquisar"
                   className="button button-background bg-purple text-support text text-size-default"
                   onClick={() => Log('Lista')}
                 >
-                  PESQUISAR
+                  Conheça nossos produtos
                 </Link>
               </article>
             </section>
