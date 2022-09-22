@@ -65,7 +65,7 @@ function Card({ produtos }) {
     <section className="cards">
       {produtos.map((product) => {
         return (
-          <article className="card border-purple mb3" key={product.id}>
+          <article className="card border-purple mb2" key={product.id}>
             <figure className="mb2">
               <div
                 className="flag"
